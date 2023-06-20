@@ -16,4 +16,7 @@ switch(operator){
     default:
         result = "0123456789";
 }
+
+let result1 = operator == "+"? leftOperands + rightOperands: operator == "-"? leftOperands - rightOperands: operator=="*"? leftOperands * rightOperands: operator=="/"?leftOperands/rightOperands: "wrong input";
 console.log("Result is ",result)
+console.log("Another result ", result1)

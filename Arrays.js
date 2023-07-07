@@ -58,4 +58,4 @@ Array.prototype.maximum = function(){
     }
     return secondMax;
 }
-console.log("Max number",newArray.maximum())
+console.log("Max number",arrr.maximum())

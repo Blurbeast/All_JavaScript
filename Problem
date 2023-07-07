@@ -1,0 +1,29 @@
+let raw_array = new Array()
+let firstObject = {
+    name : "Sydney",
+    population : 10000,
+    temp : 3.0,
+    currency : "NG"
+}
+let secondObject = {
+    name : "Sydney",
+    population : 10000,
+    temp : 3.0,
+    currency : "NG"
+}
+let thirdObject = {
+    name : "Sydney",
+    population : 10000,
+    temp : 11,
+    currency : "NG"
+}
+raw_array.push(firstObject);
+raw_array.push(secondObject);
+raw_array.push(thirdObject);
+console.table(raw_array)
+
+let total =0
+for(let index = 0; index < raw_array.length; index++){
+    if(raw_array[index].temp <= 10) total += raw_array[index].population;
+}
+console.log("sum is ", total)
